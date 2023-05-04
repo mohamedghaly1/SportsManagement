@@ -1,0 +1,298 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9C4CB9E-A9C9-4FA8-8EED-47018CAF263C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SportsManagement</RootNamespace>
+    <AssemblyName>SportsManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44324</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="availablematchesblock.aspx" />
+    <Content Include="availableMatchesToAttend.aspx" />
+    <Content Include="cr.aspx" />
+    <Content Include="creataccountcr.aspx" />
+    <Content Include="creataccountf.aspx" />
+    <Content Include="creataccountsa.aspx" />
+    <Content Include="creataccountsam.aspx" />
+    <Content Include="creataccountsm.aspx" />
+    <Content Include="defineUser.aspx" />
+    <Content Include="f.aspx" />
+    <Content Include="infostadium.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="pendingrequests.aspx" />
+    <Content Include="requestsrecieved.aspx" />
+    <Content Include="sam.aspx" />
+    <Content Include="sm.aspx" />
+    <Content Include="viewallmatches.aspx" />
+    <Content Include="viewalreadyplayed.aspx" />
+    <Content Include="viewavalstadium.aspx" />
+    <Content Include="viewinfoclub.aspx" />
+    <Content Include="viewmatchesclub.aspx" />
+    <Content Include="viewneverplayed.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="availablematchesblock.aspx.cs">
+      <DependentUpon>availablematchesblock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="availablematchesblock.aspx.designer.cs">
+      <DependentUpon>availablematchesblock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="availableMatchesToAttend.aspx.cs">
+      <DependentUpon>availableMatchesToAttend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="availableMatchesToAttend.aspx.designer.cs">
+      <DependentUpon>availableMatchesToAttend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cr.aspx.cs">
+      <DependentUpon>cr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cr.aspx.designer.cs">
+      <DependentUpon>cr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="creataccountcr.aspx.cs">
+      <DependentUpon>creataccountcr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="creataccountcr.aspx.designer.cs">
+      <DependentUpon>creataccountcr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="creataccountf.aspx.cs">
+      <DependentUpon>creataccountf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="creataccountf.aspx.designer.cs">
+      <DependentUpon>creataccountf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="creataccountsa.aspx.cs">
+      <DependentUpon>creataccountsa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="creataccountsa.aspx.designer.cs">
+      <DependentUpon>creataccountsa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="creataccountsam.aspx.cs">
+      <DependentUpon>creataccountsam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="creataccountsam.aspx.designer.cs">
+      <DependentUpon>creataccountsam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="creataccountsm.aspx.cs">
+      <DependentUpon>creataccountsm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="creataccountsm.aspx.designer.cs">
+      <DependentUpon>creataccountsm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="defineUser.aspx.cs">
+      <DependentUpon>defineUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defineUser.aspx.designer.cs">
+      <DependentUpon>defineUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f.aspx.cs">
+      <DependentUpon>f.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f.aspx.designer.cs">
+      <DependentUpon>f.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="infostadium.aspx.cs">
+      <DependentUpon>infostadium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="infostadium.aspx.designer.cs">
+      <DependentUpon>infostadium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pendingrequests.aspx.cs">
+      <DependentUpon>pendingrequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pendingrequests.aspx.designer.cs">
+      <DependentUpon>pendingrequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="requestsrecieved.aspx.cs">
+      <DependentUpon>requestsrecieved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requestsrecieved.aspx.designer.cs">
+      <DependentUpon>requestsrecieved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sam.aspx.cs">
+      <DependentUpon>sam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sam.aspx.designer.cs">
+      <DependentUpon>sam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sm.aspx.cs">
+      <DependentUpon>sm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sm.aspx.designer.cs">
+      <DependentUpon>sm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewallmatches.aspx.cs">
+      <DependentUpon>viewallmatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewallmatches.aspx.designer.cs">
+      <DependentUpon>viewallmatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewalreadyplayed.aspx.cs">
+      <DependentUpon>viewalreadyplayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewalreadyplayed.aspx.designer.cs">
+      <DependentUpon>viewalreadyplayed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewavalstadium.aspx.cs">
+      <DependentUpon>viewavalstadium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewavalstadium.aspx.designer.cs">
+      <DependentUpon>viewavalstadium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewinfoclub.aspx.cs">
+      <DependentUpon>viewinfoclub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewinfoclub.aspx.designer.cs">
+      <DependentUpon>viewinfoclub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewmatchesclub.aspx.cs">
+      <DependentUpon>viewmatchesclub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewmatchesclub.aspx.designer.cs">
+      <DependentUpon>viewmatchesclub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewneverplayed.aspx.cs">
+      <DependentUpon>viewneverplayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewneverplayed.aspx.designer.cs">
+      <DependentUpon>viewneverplayed.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50119</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44324/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
