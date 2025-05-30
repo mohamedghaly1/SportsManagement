@@ -97,16 +97,6 @@ Prevent multiple tickets per fan per match.
 Restrict bookings after match start time.
 
 ## 🛠️ Tech Stack
-DBMS: MySQL / PostgreSQL (specify your DBMS)
+DBMS: MySQL
 
-Tools: MySQL Workbench / pgAdmin (or others you used)
-
-Languages: SQL (DDL, DML, Procedures, Functions)
-
-📷 Screenshots
-(Optional — add ER diagram, schema snapshots, sample query results, etc.)
-
-##🚀 Setup & Testing
-Clone the repository:
-git clone https://github.com/mohamedghaly1/SportsManagement.git
-Load schema and procedures from /sql directory.
+Website: C#
