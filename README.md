@@ -1,14 +1,6 @@
-# SportsManagement
-
+# ⚽ Sports Match & Fan Management System
 An SQL database-based sports management system's website interface.
 To assist me, I have constructed an EERD and its relational schema.
-
-[EERD_SM.pdf](https://github.com/mohamedghaly1/SportsManagement/files/11394213/EERD_SM.pdf)
-
-[Schema_SM.pdf](https://github.com/mohamedghaly1/SportsManagement/files/11394214/Schema_SM.pdf)
-
-
-# ⚽ Sports Match & Fan Management System
 ## 📌 Project Overview
 This project is a relational database system designed to manage football clubs, stadiums, matches, fans, and organizational users such as association managers, club representatives, stadium managers, and system administrators. The system offers functionality for ticket booking, match scheduling, and data access control based on user roles.
 
